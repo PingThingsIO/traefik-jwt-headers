@@ -1,7 +1,7 @@
 displayName: JWT Headers
 type: middleware
 
-import: traefik_jwt_headers
+import: github.com/PingThingsIO/traefik-jwt-headers
 
 summary: 'Traefik middleware plugin which forwards JWT claims as request headers'
 

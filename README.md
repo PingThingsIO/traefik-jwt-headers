@@ -1,11 +1,19 @@
 # traefik-jwt-headers
+
 Traefik middleware plugin which decodes a JWT token and forwards JWT claims as request headers. It can also rewrite values in tokens as needed.
 
+## Tested Traefik Versions
+
+This pllugin has been tested on Traefik v2.9.10, and works with that version, it may not be compatible with older versions (it's written with go1.20 in mind).
+
 ## Installation
+
 The plugin needs to be configured in the Traefik static configuration before it can be used.
 
 ### Installation on Kubernetes with Helm
+
 The following snippet can be used as an example for the `values.yaml` file:
+
 ```values.yaml
 experimental:
   plugins:
