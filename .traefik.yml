@@ -1,0 +1,14 @@
+displayName: JWT Headers
+type: middleware
+
+import: traefik_jwt_headers
+
+summary: 'Traefik middleware plugin which forwards JWT claims as request headers'
+
+testData:
+  claimsPrefix: attr
+  headers:
+    displayName: X-WEBAUTH-NAME
+    email: X-WEBAUTH-EMAIL
+    username: X-WEBAUTH-USERNAME
+  unboxFirstElement: true
